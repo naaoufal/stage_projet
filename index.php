@@ -474,7 +474,7 @@ include('db.php');
 </section>
 <!-- //gallery -->
 	 <!-- rooms & rates -->
-      <div class="plans-section" id="rooms">
+    <div class="plans-section" id="rooms">
 				 <div class="container">
 				 <h3 class="title-w3-agileits title-black-wthree">Rooms And Rates</h3>
 				 <div class="priceing-table-main">
@@ -482,7 +482,7 @@ include('db.php');
 					<div class="price-block agile">
 						<div class="price-gd-top">
 						<img src="images/r1.jpg" alt=" " class="img-responsive" />
-							<h4>Deluxe Room</h4>
+							<h4>Superior Room</h4>
 						</div>
 						<div class="price-gd-bottom">
 							   <div class="price-list">
@@ -497,7 +497,12 @@ include('db.php');
 							</div>
 							<div class="price-selet">	
 								<h3><span>$</span>320</h3>						
-								<a href="admin/reservation.php" >Book Now</a>
+								<!-- <a href="admin/reservation.php" >Book Now</a> -->
+								<div id="ex1" class="modal">
+								<p>Here we type some information about Superior room.</p>
+								<a href="#" rel="modal:close">Close</a>
+								</div>
+								<a href="#ex1" rel="modal:open">More ...</a>
 							</div>
 						</div>
 					</div>
@@ -506,7 +511,7 @@ include('db.php');
 					<div class="price-block agile">
 						<div class="price-gd-top">
 						<img src="images/r2.jpg" alt=" " class="img-responsive" />
-							<h4>Luxury Room</h4>
+							<h4>Deluxe Room</h4>
 						</div>
 						<div class="price-gd-bottom">
 							<div class="price-list">
@@ -520,7 +525,12 @@ include('db.php');
 							</div>
 							<div class="price-selet">
 								<h3><span>$</span>220</h3>
-								<a href="admin/reservation.php" >Book Now</a>
+								<!-- <a href="admin/reservation.php" >Book Now</a> -->
+								<div id="ex2" class="modal">
+								<p>Here we type some information about Deluxe room.</p>
+								<a href="#" rel="modal:close">Close</a>
+								</div>
+								<a href="#ex2" rel="modal:open">More ...</a>
 							</div>
 						</div>
 					</div>
@@ -543,7 +553,12 @@ include('db.php');
 							</div>
 							<div class="price-selet">
 								<h3><span>$</span>180</h3>
-								<a href="admin/reservation.php" >Book Now</a>
+								<!-- <a href="admin/reservation.php">Book Now</a> -->
+								<div id="ex3" class="modal">
+								<p>Here we type some information about Guest room.</p>
+								<a href="#" rel="modal:close">Close</a>
+								</div>
+								<a href="#ex3" rel="modal:open">More ...</a>
 							</div>
 						</div>
 					</div>
@@ -566,7 +581,12 @@ include('db.php');
 							</div>
 							<div class="price-selet">
 								<h3><span>$</span> 150</h3>
-								<a href="admin/reservation.php" >Book Now</a>
+								<!-- <a href="admin/reservation.php" >Book Now</a> -->
+								<div id="ex4" class="modal">
+								<p>Here we type some information about Single room.</p>
+								<a href="#" rel="modal:close">Close</a>
+								</div>
+								<a href="#ex4" rel="modal:open">More ...</a>
 							</div>
 						</div>
 					</div>
@@ -577,6 +597,11 @@ include('db.php');
 		</div>
 	</div>
 	 <!--// rooms & rates -->
+	 <center>
+	 <div class="price-selet">
+	 <a href="admin/reservation.php" >Make Your Reservation</a>
+	 </div>
+	 </center>
 	<!-- reports section -->
 	<center>
 	<div class="plans-section" id="report">
@@ -916,6 +941,12 @@ fit: true
 	</div>
 <!-- //smooth scrolling -->
 <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+<!-- Remember to include jQuery :) -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> -->
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </body>
 </html>
 
